@@ -13,7 +13,7 @@ jobs:
     - name: Preparing environment...
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
-        RDP_PASSWORD: ${{ secrets.RDP_PASSWORD }}
+        RDP_PASSWORD: ${{ 123456 }}
       run: ./configure.ps1
     - name: Creating tunnel with ngrok...
       run: ./ngrok/ngrok tcp 3389
